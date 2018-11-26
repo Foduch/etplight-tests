@@ -1,0 +1,6 @@
+.nyc_output/
+coverage/
+errorShots/
+node_modules/
+*.png
+/login.conf.js
