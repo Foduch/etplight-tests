@@ -1,4 +1,4 @@
-import MainPage from './main.page'
+const MainPage = require('./main.page')
 
 class CategoriesPage extends MainPage{
 
@@ -77,4 +77,4 @@ class CategoriesPage extends MainPage{
 
 }
 
-export default CategoriesPage
+module.exports = CategoriesPage

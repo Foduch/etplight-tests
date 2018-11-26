@@ -1,4 +1,4 @@
-import MainPage from '../../page_objects/main.page'
+const MainPage = require('../../page_objects/main.page')
 
 var mainPage = new MainPage()
 

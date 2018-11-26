@@ -1,5 +1,5 @@
-import MainPage from './main.page'
-import Grid from './grid'
+const MainPage = require('./main.page')
+const Grid = require('./grid')
 var grid = new Grid()
 
 class CompaniesPage extends MainPage{
@@ -17,4 +17,4 @@ class CompaniesPage extends MainPage{
 
 }
 
-export default CompaniesPage
+module.exports = CompaniesPage

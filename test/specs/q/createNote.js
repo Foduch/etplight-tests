@@ -1,10 +1,10 @@
-import LoginPage from '../../page_objects/login.page'
-import CategoriesPage from '../../page_objects/categories.page'
-import {userEmail, password} from '../../../login.conf'
+const LoginPage = require('../../page_objects/login.page')
+const CategoriesPage = require('../../page_objects/categories.page')
+const {userEmail, password} = require('../../../login.conf')
 
 var loginPage = new LoginPage()
 var categoriesPage = new CategoriesPage()
-var title = 'Создание справочника final 4'
+var title = 'Создание справочника final 6'
 var noteVersion = '1'
 
 describe('a', () => {

@@ -1,4 +1,4 @@
-import MainPage from './main.page'
+const MainPage = require('./main.page')
 
 class CompanyProfilePage extends MainPage {
 
@@ -56,4 +56,4 @@ class CompanyProfilePage extends MainPage {
     }
 }
 
-export default CompanyProfilePage
+module.exports = CompanyProfilePage

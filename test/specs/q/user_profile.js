@@ -1,7 +1,7 @@
-import LoginPage from '../../page_objects/login.page'
-import MainPage from '../../page_objects/main.page'
-import UserProfilePage from '../../page_objects/user.profile.page'
-import {userEmail, password} from '../../../login.conf'
+const LoginPage = require('../../page_objects/login.page')
+const MainPage = require('../../page_objects/main.page')
+const UserProfilePage = require('../../page_objects/user.profile.page')
+const {userEmail, password} = require('../../../login.conf')
 
 var mainPage = new MainPage()
 var loginPage = new LoginPage()
@@ -35,9 +35,9 @@ describe('Mantest ', () => {
         userProfilePage.saveChanges()
         browser.pause(1000)
     })
-    it('should upload new profile image', () => {
-        userProfilePage.uploadProfileImage('C:/Users/g.chigarkin/MochaTests/errorShots/ERROR_chrome_2018-11-09T10-27-02.816Z.png')
-        browser.pause(1000)
-        userProfilePage.saveChanges()
-    })
+    // it('should upload new profile image', () => {
+    //     userProfilePage.uploadProfileImage('C:/Users/g.chigarkin/MochaTests/errorShots/ERROR_chrome_2018-11-09T10-27-02.816Z.png')
+    //     browser.pause(1000)
+    //     userProfilePage.saveChanges()
+    // })
 })

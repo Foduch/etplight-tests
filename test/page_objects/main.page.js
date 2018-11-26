@@ -1,5 +1,4 @@
-import Page from './page'
-import { reverse } from 'dns';
+const Page = require('./page')
 
 class MainPage extends Page {
 
@@ -106,4 +105,4 @@ class MainPage extends Page {
 
 }
 
-export default MainPage
+module.exports = MainPage

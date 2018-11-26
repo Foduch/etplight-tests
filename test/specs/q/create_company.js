@@ -1,7 +1,7 @@
-import LoginPage from '../../page_objects/login.page'
-import MainPage from '../../page_objects/main.page'
-import CompanyProfilePage from '../../page_objects/company.profile.page'
-import {userEmail, password} from '../../../login.conf'
+const LoginPage = require('../../page_objects/login.page')
+const MainPage = require('../../page_objects/main.page')
+const CompanyProfilePage = require('../../page_objects/company.profile.page')
+const {userEmail, password} = require('../../../login.conf')
 
 var loginPage = new LoginPage()
 var main_page = new MainPage()

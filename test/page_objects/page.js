@@ -1,4 +1,4 @@
-export default class Page {
+class Page {
 
 	get pauseDuration() {return 200}
 	get slider() { return $('//mat-icon[text()="menu"]') }
@@ -20,5 +20,6 @@ export default class Page {
 		}
 	}
 
-
 }
+
+module.exports = Page;
