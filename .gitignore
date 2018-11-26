@@ -3,4 +3,3 @@ coverage/
 errorShots/
 node_modules/
 *.png
-/login.conf.js
