@@ -1,10 +1,10 @@
 const LoginPage = require('../../page_objects/login.page')
 const CategoriesPage = require('../../page_objects/categories.page')
-const {userEmail, password} = require('../../../login.conf')
+const {userEmail, userEmail2, password} = require('../../../login.conf')
 
 var loginPage = new LoginPage()
 var categoriesPage = new CategoriesPage()
-var title = 'Создание справочника final 6'
+var title = 'Создание справочника final 12'
 var noteVersion = '1'
 
 describe('a', () => {
@@ -43,7 +43,19 @@ describe('a', () => {
         browser.saveScreenshot('after_publish.png')
     });
 
+    it('should logout', () => {
+        categoriesPage.logout()
+    });
+});
+
+describe('test', () => {
+    it('should login another user', () => {
+        loginPage.login(userEmail2, password)
+    });
+
     it('should delete note', () => {
+        categoriesPage.open()
+        browser.pause(categoriesPage.pauseDuration)
         categoriesPage.deleteNoteByTitle(title)
         browser.pause(categoriesPage.pauseDuration)
         browser.saveScreenshot('after_delete.png')
